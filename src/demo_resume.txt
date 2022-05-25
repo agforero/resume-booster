@@ -1,0 +1,71 @@
+﻿Agustin Forero
+New York, NY | 630-407-7876 | agf48@cornell.edu
+GitHub | LinkedIn | Personal Page
+
+
+EDUCATION
+Cornell Tech, New York, NY                                                                                                                  May 2022
+Master of Engineering in Computer Science
+Simons Graduate Scholarship Recipient
+
+
+
+
+St. Olaf College, Northfield, MN                                                                                                              May 2021 
+Bachelor of Arts in Computer Science and History
+Open Door Scholarship Recipient
+
+
+TECHNICAL SKILLS
+Coding Language:                         Python, C++, C, JavaScript, React, Bash, HTML, CSS, Fortran
+Operating Systems:                         Windows, UNIX, Linux, macOS
+Other Tools:                                   OOP, Tkinter, Keras, Colaboratory
+
+
+PROJECTS 
+COVID-19 Network Project - Link                                                                                            Dec 2020 - Mar 2021
+A collection of Python programs that identify SARS-CoV-2 and human proteins critical to the COVID-19 infection process
+* Developed Tkinter tool to graph interactions between 4,608 human and 51 SARS-CoV-2 proteins
+* Produced Seaborn-based heatmap to visually sort similar proteins into 521 clusters
+
+
+OleGraph (C++, React) - Link                                                                                         Fall 2020
+A research project investigating the value of live online collaboration for graph traversal algorithm teaching tools
+* Programmed C++ backend to export algorithm performance on randomly generated graphs as JSON packets
+* Utilized React and Node.js to create a web application for students to learn graph traversal algorithms in teams
+
+
+Fortran Testing Framework - Link                                                                                       Summer 2020
+A collection of Python and Bash scripts to enable easy testing of Fortran compilers using Bash Automated Testing System (BATS)
+* Simplified compiler performance testing on 2,370 Fortran files to 3 custom-made terminal commands
+* Tested framework on bleeding-edge Intel compiler, ifx, before reporting bugs to relevant Intel researchers
+* Engineered commands to support testing process, including a tool for adding new directories of Fortran files for testing
+
+
+EXPERIENCE 
+Inspirit AI, Program Manager, New York, NY                                                                                 May 2021 - Present
+* Teach dozens of high schoolers critical AI concepts, such as neural networks and natural language processing
+* Guide students through applied AI projects, including a SARS-CoV-2 strain origin tracker and pneumonia detection algorithm
+* Maintain and develop curriculum for student use
+
+
+St. Olaf College, CS Tutor/SI Leader/SI Mentor, Northfield, MN                                                 Aug 2019 - May 2021
+* Tutored for an introductory-level Python course
+* Directed three Supplemental Instruction (SI) sessions each week, teaching evening Python courses to dozens of undergraduates
+* Managed 11 SI Leaders by conducting one-on-one discussions concerning teaching strategies and curriculum implementation
+
+
+Argonne National Laboratory, Research Aide, Lemont, IL                                                                               Summer 2020
+* Collaborated with scientists at the Leadership Computing Facility to investigate issues with Intel’s Fortran compiler, ifx
+* Delivered research and methodology seminar to The Computing, Environment and Life Sciences Directorate at Argonne - Link
+* Sponsored by Argonne to represent facility at 2021 SIAM Computational Science and Engineering Conference
+
+
+LEADERSHIP/EXTRACURRICULAR ACTIVITIES
+Society for Industrial and Applied Mathematics, Member, Philadelphia, PA                                              Mar 2021 - Present
+* Presented Argonne research findings at the 2021 Computational Science and Engineering Conference
+
+
+St. Olaf Student Government Association, Chief Technology Officer,  Northfield, MN                                  Sep 2020 - May 2021
+* Remade Oleville.com, the website for the Student Government Association, from the ground up via Wix - Link
+* Held elections for the 2021-2022 Student Government, including the creation of a voting system and candidate profile page

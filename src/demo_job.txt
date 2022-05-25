@@ -1,0 +1,29 @@
+Job Description The F3 project is hiring for a Python Software Engineer to contribute to the constant evolution of our Financial Forecasting platform, which provides a combination of cutting-edge solutions for strategic business processes. A blend of forward-looking domains and technologies, which include advanced software engineering, bigdata, data science, cloud computing, and more, are used to build future-proof tools for our business users.
+As a Python Software Engineer, you would contribute to the day to day work in the project with your design and implementation skills, by:
+• Expanding the system and implementing new features,
+• Collaborating with other team members in a Feature Team perspective,
+• Being a technology partner for our business users
+• Supporting the business in the execution of their functions
+• Helping translating business requirements into optimal technical solutions
+• Fostering constant improvement and modernization of the platform and the project
+
+This role requires a wide variety of capabilities, including:
+• Experience with Python (equivalent experience in Java, C# or similar enterprise-level languages/platforms is also welcome if you look forward to expanding your skillset)
+• Familiarity with Agile-oriented processes and methodologies
+• Expertise in automation, security, and optimization
+• Ability to work collaboratively in teams and develop meaningful relationships to achieve common goals
+• BS/BA degree or equivalent experience
+
+Practical experience in one or more of the following areas is desirable:
+• Site Reliability Engineering (SRE)
+• Microservices and Cloud computing
+• Database-related programming (both SQL and No-SQL)
+• UI/UX expertise (including contemporary JS frameworks, for instance: React and Angular)
+• Bigdata tools and platforms
+
+About Us JPMorgan Chase & Co., one of the oldest financial institutions, offers innovative financial solutions to millions of consumers, small businesses and many of the world's most prominent corporate, institutional and government clients under the J.P. Morgan and Chase brands. Our history spans over 200 years and today we are a leader in investment banking, consumer and small business banking, commercial banking, financial transaction processing and asset management.
+We recognize that our people are our strength and the diverse talents they bring to our global workforce are directly linked to our success. We are an equal opportunity employer and place a high value on diversity and inclusion at our company. We do not discriminate on the basis of any protected attribute, including race, religion, color, national origin, gender, sexual orientation, gender identity, gender expression, age, marital or veteran status, pregnancy or disability, or any other basis protected under applicable law. In accordance with applicable law, we make reasonable accommodations for applicants' and employees' religious practices and beliefs, as well as any mental health or physical disability needs.
+The health and safety of our colleagues, candidates, clients and communities has been a top priority in light of the COVID-19 pandemic. JPMorgan Chase was awarded the "WELL Health-Safety Rating" for all of our 6,200 locations globally based on our operational policies, maintenance protocols, stakeholder engagement and emergency plans to address a post-COVID-19 environment.
+As a part of our commitment to health and safety, we have implemented various COVID-related health and safety requirements for our workforce. Employees are expected to follow the Firm's current COVID-19 or other infectious disease health and safety requirements, including local requirements. Requirements include sharing information including your vaccine card in the firm's vaccine record tool, and may include mask wearing. Requirements may change in the future with the evolving public health landscape. JPMorgan Chase will consider accommodation requests as required by applicable law.
+Equal Opportunity Employer/Disability/Veterans
+About the Team Our Corporate Technology team relies on smart, driven people like you to develop applications and provide tech support for all our corporate functions across our network. Your efforts will touch lives all over the financial spectrum and across all our divisions: Global Finance, Corporate Treasury, Risk Management, Human Resources, Compliance, Legal, and within the Corporate Administrative Office. You'll be part of a team specifically built to meet and exceed our evolving technology needs, as well as our technology controls agenda
