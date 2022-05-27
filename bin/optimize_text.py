@@ -79,6 +79,31 @@ class Optimizer():
 
         return ret
 
+class Optimizer_Demo(Optimizer):
+    def __init__(self):
+        job_path = "src/demo_job.txt"
+
+        with open(job_path, 'r') as job_file:
+            job_text = job_file.read()
+
+        super().__init__(job_text)
+
+    def optimize_text(self):
+        resume_path = "src/demo_resume.txt"
+
+        with open(resume_path, 'r') as resume_file:
+            resume_text = resume_file.read()
+
+        input_verbs = self.extract_verbs(resume_text)
+        ret = {}
+
+        for i_verb in input_verbs:
+            if i_verb in self.job_synonyms:
+                if i_verb not in ret:
+                    ret[i_verb] = self.job_synonyms[i_verb]
+
+        return ret
+
 def main():
     resume_path = "../src/demo_resume.txt"
     job_path = "../src/demo_job.txt"

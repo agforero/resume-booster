@@ -1,8 +1,9 @@
 from flask import Flask
-from src import optimize_text as ot
+from bin import optimize_text as ot
 
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+def main():
+    o = ot.Optimizer_Demo()
+    return f"<p>yes</p>"

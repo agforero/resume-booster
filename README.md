@@ -1,2 +1,2 @@
 # resume-booster
-Resume boosting web app built with Python (and Flask?)
+Resume boosting web app built with Flask.
