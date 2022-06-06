@@ -14,7 +14,7 @@ class Entry(db.Model):
 
     def __repr__(self):
         return f"<Entry {self.id}>"
-        
+
 db.drop_all()
 db.create_all()
 
@@ -43,4 +43,4 @@ def main():
         return render_template("index.html", entry=entry)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
