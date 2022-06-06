@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Resume Optimizer</title>
+{% endblock %}
+
+{% block body %}
+<div class="content_main">
+    <div class="content_left">
+        <h1>Resume Optimizer</h1>
+        <h3>by Agustin Forero</h3>
+        <form action="/" method="POST">
+            <view style="flex-direction: column; display: flex;">
+                <view style="flex: 1">
+                    <p class="entry_text">Add your resume here...</p>
+                    <textarea
+                        type="text" 
+                        name="resume_text" 
+                        id="resume_text"
+                        autofocus
+                        placeholder="Add your resume here..."
+                        required
+                        rows="20"
+                    ></textarea>
+                </view>
+                <view style="flex: 1; padding-bottom: 20px;">
+                    <p class="entry_text">Add the job description here...</p>
+                    <textarea
+                        type="text" 
+                        name="job_desc" 
+                        id="job_desc"
+                        autofocus
+                        placeholder="Add the job description here..."
+                        required
+                        rows="20"
+                    ></textarea>
+                </view>
+            </view>
+            <input type="submit" value="Optimize!">
+        </form>
+    </div>
+    <div class="content_right">
+        <h1 style="color: white">⠀</h1>
+        <h3 style="color: white">⠀</h3>
+        <p style="color: white">⠀</p>
+        <p>{{ entry.content }}</p>
+    </div>
+</div>
+{% endblock %}

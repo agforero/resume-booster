@@ -11,6 +11,8 @@ dominate==2.6.0
 filelock==3.7.0
 Flask==2.1.2
 Flask-Bootstrap==3.3.7.1
+Flask-SQLAlchemy==2.5.1
+greenlet==1.1.2
 idna==3.3
 isort==5.10.1
 itsdangerous==2.1.2
@@ -34,6 +36,7 @@ regex==2022.4.24
 requests==2.27.1
 six==1.16.0
 soupsieve==2.3.2.post1
+SQLAlchemy==1.4.37
 tk==0.1.0
 tomli==2.0.1
 tqdm==4.64.0

@@ -1,0 +1,45 @@
+body {
+    background-image: url('bkg.png');
+    background-repeat: repeat;
+    display: flex; 
+}
+.content_main {
+    flex-direction: row;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+}
+.content_left {
+    flex: 4;
+    padding: 5%;
+}
+.content_right {
+    flex: 6;
+    padding: 5%;
+}
+h1 {
+    font-size: 20;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3 {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: pre-wrap;
+}
+.entry_text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: pre-wrap;
+    font-style: italic;
+}
+textarea {
+    width: 100%;
+    white-space: pre-wrap;
+    resize: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
