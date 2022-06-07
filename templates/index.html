@@ -5,45 +5,89 @@
 {% endblock %}
 
 {% block body %}
-<div class="content_main">
-    <div class="content_left">
-        <h1>Resume Optimizer</h1>
-        <h3>by Agustin Forero</h3>
-        <form action="/" method="POST">
-            <view style="flex-direction: column; display: flex;">
-                <view style="flex: 1">
-                    <p class="entry_text">Add your resume here...</p>
-                    <textarea
-                        type="text" 
-                        name="resume_text" 
-                        id="resume_text"
-                        autofocus
-                        placeholder="Add your resume here..."
-                        required
-                        rows="15"
-                    ></textarea>
-                </view>
-                <view style="flex: 1; padding-bottom: 20px;">
-                    <p class="entry_text">Add the job description here...</p>
-                    <textarea
-                        type="text" 
-                        name="job_desc" 
-                        id="job_desc"
-                        autofocus
-                        placeholder="Add the job description here..."
-                        required
-                        rows="15"
-                    ></textarea>
-                </view>
-            </view>
-            <input type="submit" value="Optimize!">
-        </form>
+<div class="everything">
+    <div class="title_disp">
+        <view class="content_left">
+            <h1>Resume Optimizer</h1>
+            <h3>by Agustin Forero (<a href="mailto:agf48@cornell.edu">agf48@cornell.edu</a>)</h3>
+            <a class="toplink" href="https://github.com/agforero/" target="_blank">GitHub</a> •
+            <a class="toplink" href="https://www.linkedin.com/in/afor/" target="_blank">LinkedIn</a> •
+            <a class="toplink" href="https://agforero.github.io/" target="_blank">Personal Page</a>
+            <form style="padding-top: 20px" action="https://www.paypal.com/donate" method="post" target="_blank">
+                <input type="hidden" name="hosted_button_id" value="55788V35HFFBS" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+        </view>
+        <view class="content_right">
+            <p class="tutorial">
+                <b>How to use:</b> 
+                paste your resume and your job description of choice in the
+                entry fields below. Then, the tool will scan your resume 
+                and attempt to find synonyms in the job description. For
+                example, if your resume uses the word "make" where the job
+                description uses "develop", the tool will show you the line
+                in question alongside the verb you might want to change. A
+                strong resume will feature verbs used in the job description,
+                and is more likely to be selected by automatic resume readers
+                and human recruiters alike.
+            </p>
+            <p class="tutorial">
+                Do note that this tool is not perfect: it looks for
+                <i>every</i> verb in your resume, including those in headers
+                and company names, and synonyms offered aren't always the
+                flashiest. Even still, you may find some relevant changes to
+                be made!
+            </p>
+        </view>
     </div>
-    <div class="content_right">
-        <h1 style="color: white">⠀</h1>
-        <h3 style="color: white">⠀</h3>
-        <p style="color: white">⠀</p>
-        <p>{{ entry.content }}</p>
+    <hr>
+    <div class="content_main">
+        <div class="content_left">
+            <form action="/" method="POST">
+                <view style="flex-direction: column; display: flex;">
+                    <view style="flex: 1">
+                        <p class="entry_text">Add your resume here...</p>
+                        <textarea
+                            type="text" 
+                            name="resume_text" 
+                            id="resume_text"
+                            autofocus
+                            placeholder="Add your resume here..."
+                            required
+                            rows="10"
+                        ></textarea>
+                    </view>
+                    <view style="flex: 1; padding-bottom: 20px;">
+                        <p class="entry_text">Add the job description here...</p>
+                        <textarea
+                            type="text" 
+                            name="job_desc" 
+                            id="job_desc"
+                            autofocus
+                            placeholder="Add the job description here..."
+                            required
+                            rows="10"
+                        ></textarea>
+                    </view>
+                </view>
+                <input type="submit" value="Find optimal verbs!" id="submit_button">
+            </form>
+        </div>
+        <div class="content_right">
+            <p class="entry_text">⠀</p>
+            {% for entry in entries %}
+                <p class="line">{{ entry.line }}</p>
+                <view class="res_disp">
+                    <view class="verbs_disp">
+                        <p class="verbs">{{ entry.verbs }}</p>
+                    </view>
+                    <view class="syns_disp">
+                        <p class="synonyms">{{ entry.synonyms }}</p>
+                    </view>
+                </view>
+            {% endfor %}
+        </div>
     </div>
 </div>
 {% endblock %}

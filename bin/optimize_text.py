@@ -7,17 +7,39 @@ class Optimizer():
     def __init__(self, job_text):
         self.job_verbs = self.extract_verbs(job_text)
         self.job_synonyms = self.get_synonyms(self.job_verbs)
-        self.optimized = {}
 
     # optimizer function(s)
 
-    def optimize_text(self, resume_text):
-        input_verbs = self.extract_verbs(resume_text)
+    def optimize_body(self, resume_text):
+        ret = {}
+        for line in resume_text.split('\n'):
+            if len(line) > 0:
+                res = self.optimize_text(line)
+                if len(res) > 0:
+                    verbs = list(res.keys())
+                    syns = []
+                    for k, v in res.items():
+                        these_syns = ""
+                        for syn in v:
+                            these_syns += f"{syn}, "
+
+                        syns.append(these_syns[:-2])
+
+                    if line not in ret:
+                        ret[line] = [verbs, syns]
+
+        return ret
+
+    def optimize_text(self, line):
+        input_verbs = self.extract_verbs(line)
+        ret = {}
 
         for i_verb in input_verbs:
             if i_verb in self.job_synonyms:
-                if i_verb not in self.optimized:
-                    self.optimized[i_verb] = self.job_synonyms[i_verb]
+                if i_verb not in ret:
+                    ret[i_verb] = self.job_synonyms[i_verb]
+
+        return ret
 
     # helper functions
 
@@ -77,21 +99,6 @@ class Optimizer():
 
         return ret
 
-    def display_optimized(self):
-        if self.optimized == {}:
-            return ""
-
-        else:
-            ret = ""
-            for key in self.optimized:
-                line = f"{key}   →   "
-                for syn in self.optimized[key]:
-                    line += f"{syn}, "
-                
-                ret += line[:-2] + "\n"
-
-            return ret
-
 class Optimizer_Demo(Optimizer):
     def __init__(self):
         job_path = "src/demo_job.txt"
@@ -108,12 +115,14 @@ class Optimizer_Demo(Optimizer):
             resume_text = resume_file.read()
 
         input_verbs = self.extract_verbs(resume_text)
-        self.optimized = {}
+        ret = {}
 
         for i_verb in input_verbs:
             if i_verb in self.job_synonyms:
-                if i_verb not in self.optimized:
-                    self.optimized[i_verb] = self.job_synonyms[i_verb]
+                if i_verb not in ret:
+                    ret[i_verb] = self.job_synonyms[i_verb]
+
+        return ret
 
 def main():
     resume_path = "../src/demo_resume.txt"
@@ -126,8 +135,10 @@ def main():
         job_text = job_file.read()
 
     o = Optimizer(job_text)
-    print(o.optimize_text(resume_text))
-
+    opt = o.optimize_body(resume_text)
+    for thing in opt:
+        print(thing, opt[thing])
+    
     return 0
 
 if __name__ == "__main__":
