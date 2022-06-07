@@ -1,5 +1,5 @@
 from contextlib import nullcontext
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from bin import optimize_text as ot
@@ -61,4 +61,4 @@ def main():
         return render_template("index.html", entries=entries)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
